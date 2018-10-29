@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="eventListView" prefHeight="318.0" prefWidth="419.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="events.EventListViewController">
+   <children>
+      <TextArea fx:id="eventMsgArea" editable="false" layoutX="159.0" prefHeight="337.0" prefWidth="286.0" wrapText="true" />
+      <Button fx:id="addEventBttn" alignment="CENTER" contentDisplay="CENTER" layoutY="313.0" mnemonicParsing="false" onAction="#addEvent" prefHeight="25.0" prefWidth="159.0" text="Add Event" />
+      <ListView fx:id="listView" prefHeight="313.0" prefWidth="159.0" />
+   </children>
+</AnchorPane>
