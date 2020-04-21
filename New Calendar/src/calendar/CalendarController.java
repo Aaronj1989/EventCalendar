@@ -90,7 +90,7 @@ public class CalendarController {
 		LocalDate selectedDate = LocalDate.of(year, monthNum, selectedDayOfMonth);
 
 		eventListViewController.setDateAndPane(selectedDate, currentPane);
-		// maybe should put doesn't = fx-white for future projects
+	
 		ListView<EventMessage> lv = (ListView<EventMessage>) currentPane.getChildren().get(1);
 
 		eventListViewController.loadList(lv);
@@ -199,8 +199,7 @@ public class CalendarController {
 		return null;
 	}
 
-	// every time you check for events it makes call to the database maybe you
-	// should get data for the whole year of events.
+	// every time you check for events it makes call to the database
 	public void checkForEvents() {
 		EventChecker eventChecker = new EventChecker(cal, dayNumGrid);
 		eventChecker.checkForEvents();
